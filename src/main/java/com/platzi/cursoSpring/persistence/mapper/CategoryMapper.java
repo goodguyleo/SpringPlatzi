@@ -10,11 +10,10 @@ public interface CategoryMapper {
             @Mapping(source = "idCategoria", target = "categoryId"),
             @Mapping(source = "descripcion", target = "category"),
             @Mapping(source = "estado", target = "active"),
-//            @Mapping(source = "categoria", target = "category")
     })
     Category toCategory(Categoria categoria);
 
     @InheritInverseConfiguration
-    @Mapping(target = "estado", ignore = true)
+    @Mapping(target = "productos", ignore = true)
     Categoria toCategoria(Category category);
 }

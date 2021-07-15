@@ -27,12 +27,15 @@ public class ProducrService {
     }
 
     public Product save(Product product){
+
+        System.out.println("se creo el producto");
         return productRepository.save(product);
     }
 
     public boolean delete(int productId){
         return getProduct(productId).map(product -> {
             productRepository.delete(productId);
+            System.out.println("Se elimino el producto");
             return true;
         }).orElse(false);
     }
