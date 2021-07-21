@@ -1,6 +1,5 @@
 package com.platzi.cursoSpring.web.controller;
 
-
 import com.platzi.cursoSpring.domain.dto.AuthenticationRequest;
 import com.platzi.cursoSpring.domain.dto.AuthenticationResponse;
 import com.platzi.cursoSpring.domain.service.PlatziUserDetailsService;
