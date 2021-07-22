@@ -1,0 +1,1 @@
+web: java -jar -Dspring.profiles.active=pdn build/libs/cursoSpring-1.0.jar
